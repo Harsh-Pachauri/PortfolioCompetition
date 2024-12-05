@@ -6,8 +6,6 @@ import HeroSection from "@/components/HeroSection";
 // import UpcomingWebinars from "@/components/UpcomingWebinars";
 // import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutMe from "@/components/AboutMe"
-import { main } from "framer-motion/client";
-import Image from "next/image";
 
 export default function Home() {
   return (
