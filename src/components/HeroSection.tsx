@@ -14,19 +14,19 @@ function HeroSection() {
       text: "I'm",
     },
     {
-      text: "Harsh",
+      text: "HARSH",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "Pachauri",
+      text: "PACHAURI",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
 
   return (
-    <div className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-between relative overflow-hidden mx-auto py-10 px-6 md:px-16">
+    <div className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16">
       {/* Spotlight */}
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="blue" />
 
       {/* Left Section: Text */}
       <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start">

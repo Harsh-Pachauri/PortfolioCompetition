@@ -6,6 +6,10 @@ import HeroSection from "@/components/HeroSection";
 // import UpcomingWebinars from "@/components/UpcomingWebinars";
 // import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutMe from "@/components/AboutMe"
+import { TimelineDemo } from "@/components/Experiences";
+import { Projects } from "@/components/Projects";
+import MyTestimonials from "@/components/TestimonialCards";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -13,10 +17,13 @@ export default function Home() {
       {/* <h1 className="text-2xl -text-center">Hey Harsh!!</h1> */}
       <HeroSection/>
       <AboutMe/>
+      <Skills/>
+      <TimelineDemo/>
+      <Projects/>
       {/* <FeaturedCourses/>
-      <WhyChooseUs/>
-      <MusicSchoolTestimonials/>
-      <UpcomingWebinars/>
+      <WhyChooseUs/> */}
+      <MyTestimonials/>
+      {/* <UpcomingWebinars/>
       <Instructors/>
       <Footer/> */}
     </main>
