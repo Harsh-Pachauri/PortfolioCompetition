@@ -21,7 +21,7 @@ export default function CircularImage({
     sm: { wrapper: "w-64 h-64", circle: "w-32 h-32", offset: "translate-x-2 translate-y-2" },
     md: { wrapper: "w-80 h-80", circle: "w-40 h-40", offset: "translate-x-3 translate-y-3" },
     lg: { wrapper: "w-96 h-96", circle: "w-48 h-48", offset: "translate-x-4 translate-y-4" },
-    xlg: { wrapper: "w-[32rem] h-[32rem]", circle: "w-64 h-64", offset: "translate-x-6 translate-y-6" }
+    xlg: { wrapper: " h-[32rem]", circle: "w-64 h-64", offset: "translate-x-6 translate-y-6" }
   }
 
   return (
