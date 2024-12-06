@@ -5,8 +5,6 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3D-card";
 import Link from "next/link";
 import { SparklesCore } from "./ui/sparkles";
-import { div } from "framer-motion/client";
-
 export function Projects() {
     return (
         <div className="relative flex flex-wrap justify-center items-center bg-[#030119]">
