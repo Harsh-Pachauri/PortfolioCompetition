@@ -1,7 +1,7 @@
 'use client'
 // whenever there is UI manipulation
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem} from "./ui/navbar-menu";
+import { Menu, MenuItem} from "./ui/navbar-menu";
 import { cn } from "@/lib/utils/cn";
 import Link from "next/link";
 

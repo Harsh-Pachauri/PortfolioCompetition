@@ -6,7 +6,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FlipWords } from "./ui/flip-words";
 import { SparklesCore } from "./ui/sparkles";
 import CircularImage from "./ui/circular-image";
-import { div } from "framer-motion/client";
+
 
 function HeroSection() {
   const words2 = ["Web Developer", "AI-ML Enthusiast", "Data Scientist"];
