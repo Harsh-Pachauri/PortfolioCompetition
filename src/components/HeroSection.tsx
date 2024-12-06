@@ -6,6 +6,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FlipWords } from "./ui/flip-words";
 import { SparklesCore } from "./ui/sparkles";
 import CircularImage from "./ui/circular-image";
+import { div } from "framer-motion/client";
 
 function HeroSection() {
   const words2 = ["Web Developer", "AI-ML Enthusiast", "Data Scientist"];
@@ -41,7 +42,7 @@ function HeroSection() {
             <Button
               borderRadius="1.75rem"
               className="bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-            >
+              >
               Explore Courses
             </Button>
           </Link>
@@ -49,7 +50,7 @@ function HeroSection() {
             <Button
               borderRadius="1.75rem"
               className="bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-            >
+              >
               Buy Me Coffee
             </Button>
           </Link>
@@ -63,7 +64,7 @@ function HeroSection() {
             imageSrc="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"
             imageAlt="Harsh Pachauri"
             size="xlg"
-          />
+            />
         </div>
         <div className="relative w-full mt-4">
           {/* Sparkles */}
@@ -75,7 +76,7 @@ function HeroSection() {
               particleDensity={1200}
               className="w-full h-full"
               particleColor="#FFFFFF"
-            />
+              />
           </div>
 
           {/* Sparkles Gradient Background */}
