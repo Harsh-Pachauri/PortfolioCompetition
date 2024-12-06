@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Spotlight } from "./ui/spotlight";
 import { Button } from "./ui/moving-border";
 import { Meteors } from "./ui/meteors";
-import Image from "next/image";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FlipWords } from "./ui/flip-words";
 import { SparklesCore } from "./ui/sparkles";
+import CircularImage from "./ui/circular-image";
 
 function HeroSection() {
   const words2 = ["Web Developer", "AI-ML Enthusiast", "Data Scientist"];
@@ -56,15 +56,15 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* Right Section: Image */}
+      {/* Right Section: CircularImage */}
       <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center items-center mt-10 md:mt-0">
-        <Image
-          src="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"
-          alt="Music Learning"
-          width={500}
-          height={500}
-          className="rounded-lg shadow-lg object-cover max-w-full h-auto"
-        />
+        <div className="w-full max-w-[500px] aspect-square">
+          <CircularImage 
+            imageSrc="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"
+            imageAlt="Harsh Pachauri"
+            size="xlg"
+          />
+        </div>
         <div className="relative w-full mt-4">
           {/* Sparkles */}
           <div className="relative w-full h-20 mx-auto">
@@ -94,3 +94,4 @@ function HeroSection() {
 }
 
 export default HeroSection;
+

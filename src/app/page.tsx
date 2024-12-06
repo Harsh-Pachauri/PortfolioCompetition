@@ -1,10 +1,4 @@
-// import FeaturedCourses from "@/components/FeaturedCourses";
-// import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-// import Instructors from "@/components/Instructors";
-// import MusicSchoolTestimonials from "@/components/TestimonialCards";
-// import UpcomingWebinars from "@/components/UpcomingWebinars";
-// import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutMe from "@/components/AboutMe"
 import { TimelineDemo } from "@/components/Experiences";
 import { Projects } from "@/components/Projects";
@@ -20,12 +14,7 @@ export default function Home() {
       <Skills/>
       <TimelineDemo/>
       <Projects/>
-      {/* <FeaturedCourses/>
-      <WhyChooseUs/> */}
       <MyTestimonials/>
-      {/* <UpcomingWebinars/>
-      <Instructors/>
-      <Footer/> */}
     </main>
   );
 }
