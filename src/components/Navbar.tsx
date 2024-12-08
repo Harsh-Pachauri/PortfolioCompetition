@@ -17,8 +17,8 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Home">
         </MenuItem>
           </Link>
-          <Link className="flex space-x-4" href="/#skills">
-        <MenuItem setActive={setActive} active={active} item="Skils">
+          <Link className="flex space-x-4" href="/#Skills">
+        <MenuItem setActive={setActive} active={active} item="Skills">
         </MenuItem>
           </Link>
           <Link className="flex space-x-4" href="/#experiences">

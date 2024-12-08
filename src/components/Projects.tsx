@@ -8,7 +8,7 @@ import { SparklesCore } from "./ui/sparkles";
 export function Projects() {
     return (
         <div className="relative flex flex-wrap justify-center items-center bg-[#030119]">
-            <h2 className="mt-5 mb-2 text-6xl font-bold md:text-6xl text-black dark:text-white max-w-4xl">
+            <h2 className="mt-5 mb-2  font-bold md:text-6xl text-4xl text-black dark:text-white max-w-4xl">
           My Projects
         </h2>
                 
@@ -41,7 +41,7 @@ export function Projects() {
                             </CardItem>
                             <CardItem translateZ={100} className="w-full mt-4">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="/forest.png"
                                     height={1000}
                                     width={1000}
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -52,18 +52,19 @@ export function Projects() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://github.com/Harsh-Pachauri/ReactAppwriteBlog"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Repository →
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
+                                    href="https://react-appwrite-blog-puce.vercel.app/"
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                                 >
-                                    Sign up
+                                    Visit
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -87,7 +88,7 @@ export function Projects() {
                             </CardItem>
                             <CardItem translateZ={100} className="w-full mt-4">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="/tutor.png"
                                     height={1000}
                                     width={1000}
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -98,18 +99,20 @@ export function Projects() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://github.com/Harsh-Pachauri"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Repository →
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
+                                    href="https://tutor-tuition.com/"
+                                    target="__blank"
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                                 >
-                                    Sign up
+                                    Visit
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -133,7 +136,7 @@ export function Projects() {
                             </CardItem>
                             <CardItem translateZ={100} className="w-full mt-4">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="/musify.png"
                                     height={1000}
                                     width={1000}
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -144,18 +147,20 @@ export function Projects() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://github.com/Harsh-Pachauri/www.musified.com"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Repository →
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
+                                    href="https://www-musified-com.vercel.app/"
+                                    target="__blank"
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                                 >
-                                    Sign up
+                                    Visit
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -179,7 +184,7 @@ export function Projects() {
                             </CardItem>
                             <CardItem translateZ={100} className="w-full mt-4">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="/weather.png"
                                     height={1000}
                                     width={1000}
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -190,18 +195,20 @@ export function Projects() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://github.com/Harsh-Pachauri/weather"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Repository →
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
+                                    href="https://weather-pink-seven.vercel.app/"
+                                    target="__blank"
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                                 >
-                                    Sign up
+                                    Visit
                                 </CardItem>
                             </div>
                         </CardBody>
