@@ -42,7 +42,7 @@ function HeroSection() {
               borderRadius="1.75rem"
               className="w-full sm:w-auto bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
-              👋 Let's Connect
+              👋 Lets Connect
             </Button>
           </Link>
           <Link href="/coffee">
