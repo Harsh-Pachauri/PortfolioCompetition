@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { InfiniteMovingTabs } from "./ui/infinite-moving-tabs";
 function Skills() {
     return (
