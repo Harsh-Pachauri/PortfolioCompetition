@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { MenuIcon, X } from 'lucide-react';
 
 const transition = {
   type: "spring",
@@ -25,7 +26,7 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -42,13 +43,10 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
-                >
+                <motion.div layout className="w-max h-full p-4">
                   {children}
                 </motion.div>
               </motion.div>
@@ -67,12 +65,52 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
-    <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="opacity-70 text-opacity-1 ring-1  bg-opacity-10 backdrop-filter backdrop-blur-sm relative rounded-full border border-transparent dark:bg-slate-950 dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
-    >
-      {children}
+    <nav className="relative">
+      {isMobile ? (
+        <>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="z-50 fixed top-4 right-4 p-2 bg-white dark:bg-black rounded-md"
+          >
+            {isOpen ? <X /> : <MenuIcon />}
+          </button>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.2 }}
+                className="fixed inset-0 bg-white dark:bg-black z-40 flex flex-col items-center justify-center space-y-8 text-lg"
+              >
+                {React.Children.map(children, (child) => (
+                  <div onClick={() => setIsOpen(false)}>{child}</div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </>
+      ) : (
+        <div
+          onMouseLeave={() => setActive(null)}
+          className="relative rounded-full bg-[#0000177f]/30 backdrop-blur-md shadow-lg border border-white/20 px-8 py-4 flex justify-center space-x-4"
+        >
+          {children}
+        </div>
+      )}
     </nav>
   );
 };
@@ -113,7 +151,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-700 dark:text-neutral-200 hover:text-black dark:hover:text-white"
     >
       {children}
     </Link>

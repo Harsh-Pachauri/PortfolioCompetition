@@ -24,37 +24,47 @@ function HeroSection() {
   ];
 
   return (
-    <div className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16">
+    <div id="home" className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16">
       {/* Spotlight */}
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="blue" />
 
       {/* Left Section: Text */}
-      <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start">
-        <h1 className="m-1 text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight">
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-10 lg:mb-0">
+        <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight mb-4">
           <TypewriterEffectSmooth words={words} />
         </h1>
-        <div className="text-7xl font-semibold text-neutral-600 dark:text-neutral-400">
-          <FlipWords words={words2} /> <br />
+        <div className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-neutral-600 dark:text-neutral-400 mb-6 sm:mb-0">
+          <FlipWords words={words2} />
         </div>
-        <div className="mt-6 space-x-4">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 sm:gap-6">
           <Link href="/courses">
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-              >
-              Know Me
+              className="w-full sm:w-auto bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              👋 Let's Connect
             </Button>
           </Link>
           <Link href="/coffee">
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-              >
-              Buy Me Coffee
+              className="w-full sm:w-auto bg-white dark:bg-[#0b0c25] text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              Explore my work ↓
+            </Button>
+          </Link>
+          
+          <Link href="https://buymeacoffee.com/harshpachauri">
+            <Button
+              borderRadius="1.75rem"
+              className="w-full font-bold sm:w-auto bg-white  dark:bg-yellow-400 text-black dark:text-amber-950  border-neutral-200 dark:border-slate-800"
+            >
+              Buy Me a Coffee ☕︎
             </Button>
           </Link>
         </div>
       </div>
+
 
       {/* Right Section: CircularImage */}
       <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center items-center mt-10 md:mt-0">

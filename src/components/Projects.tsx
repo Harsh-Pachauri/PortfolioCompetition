@@ -7,7 +7,7 @@ import Link from "next/link";
 import { SparklesCore } from "./ui/sparkles";
 export function Projects() {
     return (
-        <div className="relative flex flex-wrap justify-center items-center bg-[#030119]">
+        <div id="#projects" className="relative flex flex-wrap justify-center items-center bg-[#030119]">
             <h2 className="mt-5 mb-2  font-bold md:text-6xl text-4xl text-black dark:text-white max-w-4xl">
           My Projects
         </h2>

@@ -52,7 +52,7 @@ export default function CircularImage({
         {/* Center circle with image */}
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className={`absolute ${sizes[size].circle} rounded-full overflow-hidden 
+          className={`shadow-transparent absolute ${sizes[size].circle} rounded-full overflow-hidden 
           shadow-[0_0_30px_rgba(0,0,0,0.5)] z-10 
           hover:shadow-[0_0_50px_rgba(0,0,0,0.7)]
           transition-all duration-300`}

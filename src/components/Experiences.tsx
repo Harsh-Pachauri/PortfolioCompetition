@@ -125,7 +125,7 @@ export function TimelineDemo() {
     
   ];
   return (
-    <div className="w-full bg-[#180e3d]">
+    <div id="#experiences" className="w-full bg-[#180e3d]">
       <br />
       <Timeline data={data} />
     </div>
