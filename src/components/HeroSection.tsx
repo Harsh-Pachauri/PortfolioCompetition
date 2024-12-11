@@ -37,7 +37,7 @@ function HeroSection() {
           <FlipWords words={words2} />
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mt-6 sm:gap-6">
-          <Link href="/courses">
+          <Link href="#contact">
             <Button
               borderRadius="1.75rem"
               className="w-full sm:w-auto bg-white dark:bg-gray-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
@@ -45,7 +45,7 @@ function HeroSection() {
               👋 Lets Connect
             </Button>
           </Link>
-          <Link href="/coffee">
+          <Link href="#experiences">
             <Button
               borderRadius="1.75rem"
               className="w-full sm:w-auto bg-white dark:bg-[#0b0c25] text-black dark:text-white border-neutral-200 dark:border-slate-800"
