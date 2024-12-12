@@ -18,7 +18,7 @@ export default function AboutMe() {
           About Me
         </h1>
         <p className="mt-4 text-lg text-neutral-300 max-w-2xl mx-auto">
-          I&#39;m a passionate developer who loves crafting beautiful, user-friendly, and highly functional web applications. With a keen eye for design and a deep appreciation for clean code, I bring ideas to life with tools like <span className="text-white font-semibold">React</span>, <span className="text-white font-semibold">Tailwind CSS</span>, and <span className="text-white font-semibold">Framer Motion</span>.
+          I&#39;m a passionate developer who loves crafting beautiful, user-friendly, and highly functional web applications. With a keen eye for design and a deep appreciation for clean code, I bring ideas to life with tools like <span className="text-white font-semibold">React</span>, <span className="text-white font-semibold">Next JS</span>, and <span className="text-white font-semibold">MongoDB</span>.
         </p>
         <p className="mt-4 text-sm text-neutral-400">
           When I&#39;m not coding, you&#39;ll find me exploring new technologies, enjoying nature, or diving into a good book.
