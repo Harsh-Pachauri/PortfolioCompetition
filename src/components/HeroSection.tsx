@@ -27,7 +27,7 @@ function HeroSection() {
   return (
     <div id="home" className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16"
     style={{
-      backgroundImage: `linear-gradient(rgba(5, 6, 25, 0.9), rgba(5, 6, 25, 0.9)), url('https://images.hdqwalls.com/download/sky-blue-nebula-4k-re-3840x2160.jpg')`,
+      backgroundImage: `linear-gradient(rgba(5, 6, 25, 0.84), rgba(5, 6, 25, 0.84)), url('https://images.hdqwalls.com/download/sky-blue-nebula-4k-re-3840x2160.jpg')`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}
