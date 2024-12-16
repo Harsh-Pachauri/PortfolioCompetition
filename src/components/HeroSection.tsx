@@ -25,7 +25,13 @@ function HeroSection() {
   ];
 
   return (
-    <div id="home" className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16">
+    <div id="home" className="bg-[#050619] h-auto md:h-[45rem] w-full rounded-md flex flex-col md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 px-6 md:px-16"
+    style={{
+      backgroundImage: `linear-gradient(rgba(5, 6, 25, 0.9), rgba(5, 6, 25, 0.9)), url('https://images.hdqwalls.com/download/sky-blue-nebula-4k-re-3840x2160.jpg')`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+    >
       {/* Spotlight */}
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="blue" />
 
@@ -77,25 +83,26 @@ function HeroSection() {
             />
         </div>
         <div className="relative w-full mt-4">
-          {/* Sparkles */}
-          <div className="relative w-full h-20 mx-auto">
-            <SparklesCore
-              background="transparent"
-              minSize={0.4}
-              maxSize={1}
-              particleDensity={1200}
-              className="w-full h-full"
-              particleColor="#FFFFFF"
-              />
-          </div>
+  {/* Sparkles */}
+  <div className="relative w-full h-20 mx-auto">
+    <SparklesCore
+      background="transparent" // Fully transparent background
+      minSize={0.4}
+      maxSize={1}
+      particleDensity={1000}
+      className="w-full h-full"
+      particleColor="#FFFFFF" // Sparkle color remains white
+    />
+  </div>
 
-          {/* Sparkles Gradient Background */}
-          <div className="absolute inset-0 w-full h-full bg-[#050619] [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+  {/* Optional: Adjusted Sparkles Gradient Background */}
+  <div className="absolute inset-0 w-full h-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
 
-          {/* Underline Gradient */}
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm"></div>
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
-        </div>
+  {/* Underline Gradient */}
+  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm"></div>
+  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
+</div>
+
       </div>
 
       {/* Meteors */}
